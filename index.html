@@ -413,7 +413,7 @@
         function matchCards(img1, img2) {
             if (img1 === img2) {
                 matched++;
-                if (matched == 1) { // Since you have 12 cards, 6 matches indicate a win
+                if (matched == 6) { // Since you have 12 cards, 6 matches indicate a win
                     const winNotification = document.getElementById("win-notification");
                     winNotification.style.display = "block";
                 }
