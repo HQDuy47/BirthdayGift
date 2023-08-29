@@ -153,6 +153,10 @@
     #background-audio {
       display: none;
     }
+
+    .hidden-audio {
+      display: none;
+    }
   </style>
 </head>
 
@@ -161,7 +165,8 @@
       <div class="card">
         <div class="outside">
           <div class="front">
-            <img src="https://github.com/HQDuy47/BirthdayGift/blob/main/images/Ycard.png" alt="Birthday Image">
+            <img src="https://raw.githubusercontent.com/HQDuy47/BirthdayGift/main/images/Ycard.png"
+              alt="Birthday Image">
           </div>
           <div class="back"></div>
         </div>
@@ -175,9 +180,10 @@
           </p>
         </div>
       </div>
-      <audio id="background-audio" controls autoplay loop>
-        <source src="/audio/audio.3gp">
-        Trình duyệt không hỗ trợ phát âm thanh
+      <audio class="hidden-audio" controls autoplay loop>
+        <source
+          src="https://www.dropbox.com/scl/fi/b7t45dpfdbmko8gcvqqdh/audio.3gp?dl=1&rlkey=bpctiq44ujwvk0ozg8cgebqsf"
+          type="audio/mpeg">
       </audio>
       <footer style="color: black; text-align: center; position: absolute; bottom: 20px; width: 100%;font-size: 10px;">
         @ Made by QDuy
