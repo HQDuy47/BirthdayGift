@@ -263,7 +263,7 @@
             background-color: #FF7361;
         }
 
-        #background-audio {
+        .hidden-audio {
             display: none;
         }
     </style>
@@ -271,7 +271,8 @@
 
 <body>
     <video id="background-video" controls autoplay loop muted>
-        <source src="https://github.com/HQDuy47/BirthdayGift/blob/main/video/videoplayback1.webm">
+        <source src="https://raw.githubusercontent.com/HQDuy47/BirthdayGift/main/video/videoplayback1.webm"
+            type="video/webm">
         Trình duyệt không hỗ trợ phát video
     </video>
     <div class="wrapper">
@@ -380,9 +381,10 @@
             <button>Xin mời bạn bấm</button>
         </a>
     </div>
-    <audio id="background-audio" controls autoplay loop>
-        <source src="/audio/videoplayback.3gp">
-        Trình duyệt không hỗ trợ phát âm thanh
+    <audio class="hidden-audio" controls autoplay loop>
+        <source
+            src="https://www.dropbox.com/scl/fi/ars3x9magedt8pc0bsyn8/videoplayback.3gp?rlkey=1si702ln31svqbuu65x0jwy6b&dl=1"
+            type="audio/mpeg">
     </audio>
     <footer style="color: black; text-align: center; position: absolute; bottom: 20px; width: 100%;font-size: 10px;">
         @ Made by QDuy
@@ -411,7 +413,7 @@
         function matchCards(img1, img2) {
             if (img1 === img2) {
                 matched++;
-                if (matched == 6) { // Since you have 12 cards, 6 matches indicate a win
+                if (matched == 1) { // Since you have 12 cards, 6 matches indicate a win
                     const winNotification = document.getElementById("win-notification");
                     winNotification.style.display = "block";
                 }
